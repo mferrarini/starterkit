@@ -13,7 +13,7 @@
 ;----------// Stylesheets
 
   css[] = css/childtheme.css
-  css[] = css/childtheme.layout.css
+; css[] = css/childtheme.layout.css
 ; ie_stylesheets[screen][lt IE 9][] = css/childtheme-ie.css
 
 ; scripts[] = js/childtheme.js
