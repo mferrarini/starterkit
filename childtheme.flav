@@ -7,7 +7,7 @@
 
   name        = ChildTheme
   description = Harvard Library's child theme for OpenScholar sites.
-  module      = crimson
+  module      = stark
   screenshot  = screenshot.png
 
 ;----------// Stylesheets
