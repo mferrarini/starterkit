@@ -5,16 +5,15 @@
 
 ;----------// Theme Information
 
-  name        = Starterkit 
-  description = A brief description about the theme.
-  module      = cleanblue
+  name        = ChildTheme
+  description = Harvard Library's child theme for OpenScholar sites.
+  module      = crimson
   screenshot  = screenshot.png
 
 ;----------// Stylesheets
 
-  css[] = css/starterkit.css
-; css[] = css/starterkit.layout.css
-: ie_stylesheets[screen][lt IE 9][] = css/starterkit-ie.css
+  css[] = css/childtheme.css
+; css[] = css/childtheme.layout.css
+: ie_stylesheets[screen][lt IE 9][] = css/childtheme-ie.css
 
-; scripts[] = js/starterkit.js
-
+; scripts[] = js/childtheme.js
