@@ -1,33 +1,65 @@
 /* To utilize a google font, place the font url's here at the top of this css file as seen here*/
 @import url('http://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
+
+/* GLOBAL */
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
 
 body {
-	font: arial,helvetica,sans-serif;
-	color:#444;
-	background: url('../images/columnsBg.png') #f1f1f1;
-	}
+	color: #414141;
+  font-family: "Lora", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.7058823529;
+}
+@media (min-width: 621px) {
+  body {
+    font-size: 19px;
+    line-height: 1.6842105263;
+  }
+}
+
+/* VISUALLY HIDDEN */
+.hl__visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+
+}
 
 /* TYPOGRAPHY*/
 a, a:visited {
-	color:#446677;
-	text-decoration: none;
-	}
+  border-bottom: 3px solid transparent;
+  color: #0579b8;
+  font-family: "Trueno", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border 0.28s cubic-bezier(0.28, 1.08, 1, 0.96);
+}
 
-a:hover {
-	text-decoration: underline;
-	color: #222;
-	}
+a:hover, a:focus {
+  border-bottom-color: rgba(5, 121, 184, 0.3);
+	color: #0579b8;
+}
 
 h1, h2, h3, h4 {
-	font-weight:normal;
-	font-family:'Arvo', arial, serif;
+	font-family: "Trueno", sans-serif;
 	margin-bottom:15px;
-	}
-	
+}
+
 
 /* IF THE SEPARATE IE CSS FILE IS NOT USED, PREFIX CLASSES CAN BE USED THROUGHOUT THIS FILE.
  THIS EXAMPLE IS AN IE8 OVERRIDE FOR MARGIN-BOTTOM OF AN H2 - .lt-ie8 WOULD TARGET IE7 */
 .lt-ie9 h2 {
 	margin-bottom:10px;
-	}
-	
+}
