@@ -3,10 +3,10 @@ IT IS ONLY NECESSARY TO REFERENCE THIS CSS FILE IN THE .INFO FILE, IF THE CUSTOM
 IN THIS EXAMPLE, THE OUTER CONTAINER HAS A WIDTH OF 980PX, AND SIDEBAR AND HEADER REGION WIDTHS OF 200PX AND 230PX RESPECTIVELY. */
 
 
-.container {
-  width:100%;
+#header-container {
+  width: 100%;
 }
-#columns {
+/* #columns {
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -19,12 +19,9 @@ IN THIS EXAMPLE, THE OUTER CONTAINER HAS A WIDTH OF 980PX, AND SIDEBAR AND HEADE
     padding-left: 120px;
     padding-right: 120px;
   }
-}
-#columns .hl__container-full {
-  width:100%;
-}
+} */
 
-#content-column,.content-column,div.sidebar {
+/* #content-column,.content-column,div.sidebar {
   float: left;
   clear: none;
 }
@@ -77,4 +74,4 @@ IN THIS EXAMPLE, THE OUTER CONTAINER HAS A WIDTH OF 980PX, AND SIDEBAR AND HEADE
 }
 .region-header-second {
   width:100%;
-}
+} */

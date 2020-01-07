@@ -1,0 +1,39 @@
+/* breakpoints.scss */
+.hl__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 970px;
+}
+@media (min-width: 1171px) {
+  .hl__container {
+    max-width: 1170px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.hl__container-wide {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1640px;
+}
+
+.hl__container-medium {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1210px;
+}
+
+.hl__container-full {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1450px;
+}
