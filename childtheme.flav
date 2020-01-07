@@ -13,7 +13,7 @@
 ;----------// Stylesheets
 
   css[] = css/childtheme.css
-  css[] = css/childtheme.layout.css
+; css[] = css/childtheme.layout.css
 ; css[] = css/_breakpoints.layout.scss
 ; css[] = css/_colors.layout.scss
 ; css[] = css/_containers.layout.scss
