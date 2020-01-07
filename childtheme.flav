@@ -5,7 +5,7 @@
 
 ;----------// Theme Information
 
-  name        = ChildTheme
+  name        = childtheme
   description = Harvard Library's child theme for OpenScholar sites.
   module      = hwpi_modern
   screenshot  = screenshot.png
