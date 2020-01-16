@@ -2,9 +2,24 @@
 IT IS ONLY NECESSARY TO REFERENCE THIS CSS FILE IN THE .INFO FILE, IF THE CUSTOM THEME IS **NOT** BASED ON AN EXISTING OPENSCHOLAR THEME.
 IN THIS EXAMPLE, THE OUTER CONTAINER HAS A WIDTH OF 980PX, AND SIDEBAR AND HEADER REGION WIDTHS OF 200PX AND 230PX RESPECTIVELY. */
 
-
-#header-container {
-  width: 100%;
+.branding-container,
+#header-container,
+#columns,
+#menu-bar nav,
+#menu-bar #block-os-primary-menu,
+#footer .gpanel,
+.region-footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width:1280px;
+  	margin-left:auto;
+  	margin-right:auto;
+  	padding-left:20px;
+  	padding-right:20px;
+}
+#columns {
+  margin:0 auto;
 }
 /* #columns {
   margin-left: auto;

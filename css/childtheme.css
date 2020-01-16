@@ -11,22 +11,17 @@ html {
 body {
 	color: #414141;
   font-family: "Lora", Georgia, serif;
-  font-size: 17px;
-  line-height: 1.7058823529;  /* line-height/font-size */
-}
-@media (min-width: 621px) {
-  body {
-    font-size: 19px;
-    line-height: 1.6842105263;  /* line-height/font-size */
-  }
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.6842105263;  /* line-height/font-size */
 }
 
 b, strong {
-  font-weight:700;
+  font-weight: 700;
 }
 
 button {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 input, textarea {
@@ -66,9 +61,69 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-h1, h2, h2.block-title, h3, h4 {
+h1, h1#page-title, h2, h2.block-title, .boxes-box-content h2, h3, h4, h5, h6 {
+  color: #1e1e1e;
 	font-family: "Trueno", sans-serif;
+  letter-spacing: normal;
+  text-transform: uppercase;
 }
+h1, h1#page-title, h2, h2.block-title, .boxes-box-content h2, h3 {
+  font-weight: 700;
+}
+h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1, h1#page-title, body.page-home .region-content-top h2 {
+  font-size: 60px;
+  line-height: 74px;
+  padding: 0;
+}
+
+h2, h2.block-title, .boxes-box-content h2 {
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 2.4px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing:2.14px;
+}
+
+h5 {
+  font-size: 19px;
+  line-height: 29px;
+  text-transform: none;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: none;
+}
+
+/* SUBTITLE */ body.page-home .region-content-top p {
+  color: #1e1e1e;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* supporting large text {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 42px;
+} */
+
+
 
 /* BUTTONS */
 
@@ -78,6 +133,103 @@ h1, h2, h2.block-title, h3, h4 {
 #header {
   background-image: linear-gradient(45deg, #F8C21C 0%, #FBE08E 100%);
 }
+#header-container {
+  width: 100%;
+}
+#boxes-box-site_info,
+#boxes-box-site_info a {
+  color: #1e1e1e;
+  font-family: "Trueno",sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1.52px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+#boxes-box-site_info h1 {
+	line-height: 0;
+}
+#header a {
+  border-bottom: none;
+  padding: 15px 20px;
+}
+#header-container .block-boxes-os_boxes_site_info {
+	height: 60px;
+	min-height: 60px;
+}
+.region-header-third {
+  background:#1e1e1e;
+  width: 320px;
+  margin-left: -320px;
+  text-align: right;
+  height: 60px;
+}
+/* responsive styles */
+@media(max-width:1008px){
+  .at-panel.gpanel.panel-display.three-col.clearfix {
+    padding-right: 0;
+  }
+  #header-container .block-boxes-os_boxes_site_info {
+    padding: 0;
+  }
+  #boxes-box-site_info {
+    padding-top: 0 !important;
+    margin-left: 0;
+  }
+}
+.region-header-third .region-inner {
+    padding-top: 15px !important;
+}
+.region-header-second div {
+  float: none;
+}
+@media(max-width:479px){
+  .region-header-second .region-inner {
+    padding-top: 0px !important;
+  }
+}
+
+/* MENU BAR: NAVIGATION & SEARCH */
+#menu-bar nav, #menu-bar #block-os-primary-menu {
+  width: 100%;
+  margin: 0;
+}
+/* NAVIGATION  */
+#menu-bar {
+  background: #1e1e1e;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 320px;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.32);
+}
+#menu-bar ul.nice-menu a {
+  padding: 16px 20px; /* CHANGE TOP/BOTTOM ONCE UPDATE FONTS/SIZING */
+}
+/* SEARCH BOX */
+.block-os-search-solr {
+  max-width: 270px;
+  padding: 15px 25px;
+}
+
+/* HOMEPAGE */
+body.page-home .region-content-top {
+  text-align: center;
+  margin-bottom: 60px;
+}
+body.page-home .region-content-top::after {
+	background-image: linear-gradient(90deg,#6c6c6c 40%,rgba(255,255,255,0) 20%),linear-gradient(90deg,#6c6c6c 40%,rgba(255,255,255,0) 20%);
+	background-position: top;
+	background-repeat: repeat-x;
+	background-size: 4px 1px;
+	border: none;
+	content: "";
+	display: block;
+	height: 1px;
+	width: 100%;
+}
+
 
 /* FOOTER */
 #footer, #footer a, #footer a:visited {
@@ -97,10 +249,14 @@ h1, h2, h2.block-title, h3, h4 {
 #powerby-login {
 	display: none;
 }
+/* remove top border from blocks (Crimson Theme) */
+.front #content-column .block, .node-person .block-inner, .comment-wrapper {
+	border-top: none;
+}
 
 
 /* IF THE SEPARATE IE CSS FILE IS NOT USED, PREFIX CLASSES CAN BE USED THROUGHOUT THIS FILE.
  THIS EXAMPLE IS AN IE8 OVERRIDE FOR MARGIN-BOTTOM OF AN H2 - .lt-ie8 WOULD TARGET IE7 */
 .lt-ie9 h2 {
-	margin-bottom:10px;
+	margin-bottom: 10px;
 }
