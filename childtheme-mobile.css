@@ -78,4 +78,26 @@
   }
 }
 
+
+/* card view */
+@media(max-width:1008px){
+  .hl__card-view article, .hl__card-view.block .node:last-child {
+    width: calc(49% - 40px);
+  }
+  .hl__card-view article:nth-child(3n) {
+    border-right: 1px solid #c0c0c0;
+  }
+  .hl__card-view article:nth-child(2n), .hl__card-view article:last-child, .hl__card-view.block .node:last-child {
+    border-right: 0;
+  }
+}
+@media(max-width:768px){
+  .hl__card-view article, .hl__card-view.block .node:last-child  {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 0 !important;
+  }
+}
+
 </style>
