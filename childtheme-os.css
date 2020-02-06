@@ -160,7 +160,7 @@ a.hl__right-arrow::after, a.more-link::after, #columns a.node-readmore::after {
 }
 
 /* BUTTON (BLACK BY DEFAULT) */
-#columns a.hl__button, #columns a.hl__button--blue, #columns a.hl__button--outline, a.register,
+#columns a.hl__button, #columns a.hl__button--blue, #columns a.hl__button--outline, #columns a.hl__button--small, a.register,
 .hl__content-block--dots-button a, .hl__content-block--dark-image a, .hl__content-block--light-image a {
   	border: 2px solid transparent;
   	border-radius: 4px;
@@ -212,7 +212,7 @@ a.register:hover, a.register:focus,
 }
 
 /* SMALL BLACK BUTTON */
-#columns .hl__content-block--dots-button a {
+#columns .hl__content-block--dots-button a, #columns a.hl__button--small {
   border: transparent;
   font-size: 12px;
   line-height: 16px;
@@ -220,7 +220,8 @@ a.register:hover, a.register:focus,
   background-color: #1E1E1E;
   color: white;
 }
-#columns .hl__content-block--dots-button a:hover, #columns .hl__content-block--dots-button a:focus {
+#columns .hl__content-block--dots-button a:hover, #columns .hl__content-block--dots-button a:focus,
+#columns a.hl__button--small:hover, #columns a.hl__button--small:focus {
   background-color: #6c6c6c;
   color: white;
 }
@@ -1387,7 +1388,7 @@ ul.pager li a:hover, ul.pager li a:focus {
 	text-transform: uppercase;
 	letter-spacing: 2.4px;
 }
-.hl__eyebrow {
+.hl__eyebrow, #content-column p.hl__eyebrow {
   font-family: "Trueno",sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1395,6 +1396,8 @@ ul.pager li a:hover, ul.pager li a:focus {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #6c6c6c;
+  margin-bottom: 0;
+  font-style: normal;
 }
 .hl__story__summary p {
 	font-style: italic;
