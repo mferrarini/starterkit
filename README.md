@@ -1,4 +1,5 @@
-This repository has been archived.
+> [!NOTE]
+> **This project is archived.** It is no longer actively maintained.
 
 
 This theme starter kit is meant to act as a guide when setting up your own custom theme directory to zip, and upload for use in OpenScholar. For first time themers, it is recommended that this starterkit directory be used as the basis for the custom theme--it will help lessen the chances of forgetting to include a file or a reference somewhere. Again, this is only a suggestion. 
