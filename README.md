@@ -1,3 +1,6 @@
+This repository has been archived.
+
+
 This theme starter kit is meant to act as a guide when setting up your own custom theme directory to zip, and upload for use in OpenScholar. For first time themers, it is recommended that this starterkit directory be used as the basis for the custom theme--it will help lessen the chances of forgetting to include a file or a reference somewhere. Again, this is only a suggestion. 
 
 While having Drupal theming experience is not necessary to create a custom theme, being comfortable with writing CSS and using Firebug or Chrome Dev Tools are important skills to have. The key to successful Drupal theming is understanding how the many layers of css affect various html elements, and knowing how to override only the css rules and/or attributes that are required to attain the desired styled result, in the custom theme. Using Firebug or Chrome Dev Tools will indicate exactly which css rules/attributes need to be overridden in the custom theme css file(s).  
